@@ -1,0 +1,187 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html{
+	font-size: 602.5%;
+}
+
+body {
+	background-color: 	beige;
+	place-items: 	center;
+
+	}
+
+	.container {
+	display:grid;
+    gap: 1rem;
+	grid-template-rows:1fr 1fr 1fr;
+	grid-template-columns:1fr ;
+	
+
+}
+
+
+
+nav	{
+	grid-column: span 6;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+/*	gap: 500px;*/
+	/*padding: 0.2rem;*/
+}
+
+.column {
+	grid-column:span 3;
+}
+
+footer {
+	background-color: ;
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	grid-column:span 6;
+}
+
+
+
+.logo {
+	padding-top: 0.6rem;
+	text-align: center;
+	font-size: 0.5rem;
+}
+
+
+.logo:hover	{
+	color:blue;
+	background-color:orange;
+	padding: 	2px;
+	border-radius: 	9px;
+}
+
+ul	{
+	margin-left: auto;
+	display: inline-flex;
+	gap: 60px;
+}
+
+li {
+   
+	list-style: none;
+}
+
+h1 {
+	color: 	skyblue	;
+	font-size:0.7rem;
+}
+span {
+	color: 	orange;
+}
+
+p {
+	font-size: 0.2rem;
+	
+}
+
+
+
+a{
+	display: 	inline-flex;
+	text-decoration: 	none;
+	font-size: 	0.2rem;
+	border-radius: 	0.2em;
+	padding: 	0.3em;
+	background-color: 	blue	;
+	color: 	white;
+}
+
+
+	a:hover {
+	background-color: skyblue;
+}
+
+a:active {
+	background-color: 	orange	;
+}
+
+.column {
+	text-align: center;
+	font-size: 0.4rem;
+	color: orange;
+	display: inline-block;
+	padding: 0.1rem;
+	background-color:transparent;
+}
+
+./*column:hover {
+	color: white;
+}
+*/
+
+.column:active {
+    color: white;
+}
+
+@media(max-width:600px){
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		margin: auto;
+	}
+}
+
+@media(max-width:450px){
+
+	/*ul {
+		display:flex;
+		flex-direction: column;
+		margin: 	auto;
+		gap:0px;
+		padding:0px;
+	}
+*/
+	ul {
+		display: 	flex	;
+		flex-direction: 	column	;
+		width: 	100vw;
+		background-color: 	blue;
+		text-align: 	center	;
+	}
+
+
+	li {
+		padding: 0px;
+		border-bottom: 2px white solid;
+	}
+
+	footer {
+	background-color: ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+}
+
+@media(max-width:340px){
+
+  h1 {
+  	font-size: 0.3rem;
+  }
+}
+
